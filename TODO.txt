@@ -1,0 +1,93 @@
+ TODO.txt
+
+===========================================================================================
+   REQUISITOS DEL SITIO WEB  /equipos                              Puntaje     Hecho
+-------------------------------------------------------------------------------------------
+1 El sitio web debe poseer al menos 4 paginas html ó 4                10         SI
+   secciones si se trata de un sitio one page
+
+-------------------------------------------------------------------------------------------
+  El sitio web debe incluir un formulario de contacto con             15         CASI
+  al menos 5 campos que incluya un checkbox o radiobutton
+  un select y una imagen, con validacion realizada mediante
+  javascrip para que los campos sean obligatorios
+
+-------------------------------------------------------------------------------------------
+  Tener al menos una página totalmente responsive con minimo          15         NO  
+  3 puntos de corte para 3 tamaños de dispositivos (PC desktop
+  Tablet, Celular 
+
+-------------------------------------------------------------------------------------------
+  Utilizar al menos una animacion, transformacion o una               10         NO
+  transicion (10)
+
+-------------------------------------------------------------------------------------------
+  Poseer una estructura HTML maquetada con Flexbox y/o Grid           10         NO
+
+-------------------------------------------------------------------------------------------
+  Se considerara la presentacion general del proyecto                 10         .
+  la legibilidad del mismo, la navegacion sin llegar a puntos 
+  de no retorno, la optimizacion de imagenes para la web y
+  el uso de favicon  
+-------------------------------------------------------------------------------------------
+  El trabajo practico debera subirse a un servidor online y           10         .
+  compartirse mediante un repositorio de GIT
+
+     *** MANDATORIO ***
+-------------------------------------------------------------------------------------------
+La pagina debera subirse a un servidor on-line para poder             10         .
+ser navegada por el docente. Ej Netlify o similar
+
+     *** MANDATORIO ***
+-------------------------------------------------------------------------------------------
+  El sitio web debe estar estructuRado utilizando etiquetas            5         .
+  semanticas HTML correctamente.
+  Debe pasar la validacion de 
+  https://validator.w3.org  ==> SIN ERRORES !!!
+
+     *** MANDATORIO ***
+-------------------------------------------------------------------------------------------
+  Utilizar iframe y/o iconos de FontAwesome y/o                        5         SI
+  fuentes locales o bien Google fonts
+-------------------------------------------------------------------------------------------
+  TOTAL                                                               100
+===========================================================================================
+
+
+
+ TAREAS PARA EL TRABAJO PRACTICO
+ -------------------------------
+
+ Creo que hay que comenzar al reves de lo que hizo la profe.
+ Con vista a lo que se habló sobre hacer un sitio web sobre una fabrica de 
+ remeras geek a pedido.
+
+
+ 1. Diseñar el sitio empezando por la parte responsive para los distintos 
+    tamaños celus, table, PC
+
+ 2. Pensar las columnas y filas de cada html si estan/estarian bien o hay 
+    que hacer cambios
+
+ 3. Que contenido iria en cada html 
+
+ 4. En que partes y en que archivos html se haria animacion
+
+ 5. si el diseño general les parece bien, colores, etc. etc
+
+ 6. Como encarariamos la division del trabajo ?
+    si hay alguna cosa, que los cope más para hacer
+
+
+ EDITEN A PLACER, CAMBIEN, AGREGUEN, ESCRIBAN...
+
+    
+ 
+
+
+
+
+ 
+
+ 
+
