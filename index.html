@@ -6,102 +6,308 @@
   <link rel="icon" href="./img/shirt-icon.png" type="image/x-icon">
   <link rel="stylesheet" 
      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
-  <link rel="stylesheet" href="./css/geek.css">
 
-  <title> Remeras GEEK </title>
+  <link rel="stylesheet" href="./css/geek2.css">
+
+  <title> GEEK-R2 </title>
 
  <style>
- </style>
 
+ * { margin:0;
+     padding:0;
+     box-sizing: border-box;
+   }
+
+body {
+    font-family: Verdana, "Segoe UI", Arial, sans-serif;
+   /* background-color:#f0f0f0; */  }
+
+main { margin-left: 0px; 
+       line-height: 1.5;
+       font-size: 16px;
+     }
+
+<!-- responsive --------------- -->
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 1px;
+}
+
+
+/* en firefox no me funciona display: block; */
+/* [< 600] For old mobile phones: bg rosa */ 
+
+@media screen and (max-width: 600px) {
+
+ .topnav a { 
+       display: block !important; 
+       text-align: left !important; 
+       float: none; 
+     } 
+
+  body { background-color: #ffe8ff; }
+}
+
+
+/* [< 768] For small mobile phones & small tablets : bg lavender */
+
+@media screen and (max-width: 768px) and (min-width: 601px) {
+
+  body { background-color: lavender; }
+}
+
+
+/* [< 992] For small mobile phones & small tablets : bg celeste claro #e6ffff  */
+
+@media screen and (max-width: 992px) and (min-width: 769px) {
+
+  body { background-color: #e6ffff;  }
+}
+
+
+/* [> 1024] For mobile phones & tablets : bg verde claro #e6ffe6; */
+
+@media screen and (min-width: 1020px) {
+
+  body { 
+         background-color: #f0f0f0; 
+      /* background-color: #e6ffe6; */
+     }
+}
+
+
+@media only screen and (min-width: 700px) {  /* entonces >=   */
+  /* For desktop: */
+
+  .col-1 {width: 8.33%;}  /*  100/12  */
+  .col-2 {width: 16.66%;} /* 100/2*2  */
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+
+div P .autora { 
+    font-family: 'sans';
+    color: white;
+    display: inline-block;   
+    text-align: right; 
+    background-color: #ff711a;
+    font-size: 9pt;
+  }
+
+
+/*  100/12  */
+/*
+  .col-005 {width:  5%; }  
+  .col-010 {width: 10%; }  
+  .col-015 {width: 15%; }
+  .col-020 {width: 20%; }
+  .col-025 {width: 25%; }
+  .col-030 {width: 30%; }
+  .col-035 {width: 35%; }
+  .col-040 {width: 40%; }
+  .col-045 {width: 45%; }
+  .col-050 {width: 50%; }
+  .col-055 {width: 55%; }
+  .col-060 {width: 60%; }
+  .col-065 {width: 65%; }
+  .col-070 {width: 70%; }
+  .col-075 {width: 75%; }
+  .col-080 {width: 80%; }
+  .col-085 {width: 85%; }
+  .col-090 {width: 90%; }
+  .col-095 {width: 95%; }
+  .col-100 {width:100%; }
+*/
+
+< ! --  fin reponsive - - >
+
+
+
+.fa {
+    display: inline-block;
+    font-style: normal;
+    font-variant-caps: normal;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 1;
+    font-family: FontAwesome;
+    font-size-adjust: none;
+    font-kerning: auto;
+    font-variant-alternates: normal;
+    font-variant-east-asian: normal;
+    font-variant-ligatures: normal;
+    font-variant-numeric: normal;
+    font-variant-position: normal;
+    font-language-override: normal;
+    font-feature-settings: normal;
+    font-variation-settings: normal;
+    text-rendering: auto;
+}
+
+
+ .topnav {  
+        background-color: black;   
+        font-size: 12.5pt;
+    /* height 42px ** NUNCA ** definir una altura, xq el menu no puede flotar */
+       }
+
+ .topnav a {
+         display: inline-block;
+         color: #f2f2f2;
+         text-align: center;
+         padding: 8px 16px;
+         text-decoration: none;
+       }
+
+ .topnav a:hover { color: black;
+             background-color: #ddd;
+        }
+
+ .img-cart { color: white;
+          background-color: #ddd !important;
+      }
+
+ .right {  float: right;
+         display: inline-block;
+         margin : 0 auto;
+         padding: 0 auto;
+       }
+
+ .orange { background-color: #ff711a; }
+
+ .centro { text-align: center; }
+
+ h1,h5 { 
+      font-family: Verdana, "Segoe UI",Arial,sans-serif;
+      font-weight: 400;
+      text-align: center;
+      color: black;
+   }
+
+ #my {
+      font-size: 80px;
+   }
+
+
+ .big { font-size: 50px; }
+
+.asideL {
+  padding: 5px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+}
+
+.asideR {
+  background-color: #ffffe6;
+  padding: 8px 10px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  align-items: center;
+}
+
+</style>
 </head>
+
 
 <body>
 
-<header id="miheader">
+<header>
 
 <!-- Navbar -->
-<div class="w3-top">
+<div class="topnav">
+  <a href="./index.html" class="topnav orange"><i class="fa fa-home" 
+     style="font-size:18px;"></i> </a>
 
- <div class="w3-bar w3-theme-d2 w3-left-align">
-
-  <a href="./index.html" class="w3-bar-item w3-button w3-teal mytheme">
-     <i class="fa fa-home" style="font-size:16px; margin-right: 2px;"  ></i></a>
-
-  <a href="./gallery.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Galeria</a>
-  <a href="./company.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Empresa</a>
-  <a href="./template.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contacto</a>
-  <a href="./template.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Registro</a>
-
-    <div class="w3-dropdown-hover w3-hide-small">
-    <button class="w3-button" title="Notifications">Dropdown <i class="fa fa-caret-down"></i>
-</button>     
-
-    <div class="w3-dropdown-content w3-card-4 w3-bar-block">
-      <a href="#" class="w3-bar-item w3-button">Link</a>
-      <a href="#" class="w3-bar-item w3-button">Link</a>
-      <a href="#" class="w3-bar-item w3-button">Link</a>
-    </div>
-  </div>
-
- </div>
-
-
-  <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
-    <a href="#" class="w3-bar-item w3-button">Team</a>
-    <a href="#" class="w3-bar-item w3-button">Work</a>
-    <a href="#contact" class="w3-bar-item w3-button">Contact</a>
-    <a href="#" class="w3-bar-item w3-button">Search</a>
-  </div>
+  <a href="./gallery.html"  class="topnav">Galeria</a>
+  <a href="./company.html"  class="topnav">Empresa</a>
+  <a href="./contact.html"  class="topnav">Contacto</a>
+  <a href="./template.html" class="topnav">Otro</a>
+  <a href="./shop.html" class="right orange shop"> 
+      <img class="" src="./img/cart2.svg"></a>
 </div>
 
 </header>
 
-<br>
-<br>
-    <h1>Remeras premium </h1>
-
-
 <main>
+ <h2 style="color: red;"> Testear responsive para las otros tamaños (@media)</h2>
 
-   <div id="container">
+<div class="row" style="height:580px;">
 
-     <div class="t-shirt" >
+  <div class="col-1">
+    <div class="asideL">
+     <h1 class="big"> &nbsp; </h1>
+    </div>
+  </div>
 
-      <a href="#" ><img class="G20" src="./img/6da383.webp" 
-            width="300" height="auto"  alt="."> </a>
-      <a href="#" ><img class="G20" 
+  <div class="col-9">
+
+    <h1 class="centro"> Remeras premium </h1>
+    <h5 id="my"> GEEK</h5>
+    <p> <br></p>
+    
+    <!-- div class="t-shirt" -->
+
+    <a href="#"><img class="" src="./img/6da383.webp" 
+            width="300" height="300"  alt="."> </a>
+
+    <a href="#" ><img class="" 
+      <!-- a href="#" ><img class="G20"
           src="./img/binary-computer-1s-and-0s-891752.webp"
-            width="300" height="auto"  alt="."> </a>
-      <a href="#" ><img class="G20"
-          src="./img/electronic-components-151304.webp"
-            width="300" height="auto"  alt="."> </a>
-     </div>
+            width="300" height="300"  alt="."> </a>
+  </div>
+         <!-- src="./img/electronic-components-151304.webp"
+            width="300" height="auto"  alt="."> </a -->
 
-   </div>
 
-      <h5 id="my"> GEEK</h5>
+  <div class="col-2">
+    <div class="asideR">
+     <span> ale ale ale ale ale ale ale ale ale ale ale ale ale ale ale ale ale ale ale ale ale ale  
+            ale ale ale ale ale ale ale ale ale ale ale ale ale ale ale ale ale ale ale ale </span>
+     <h1 class="big">Space  for   sale</h1>
+     <span> ale ale ale ale ale ale ale ale ale ale ale ale ale ale ale ale ale ale ale ale ale ale ale 
+            ale ale ale ale ale ale ale ale ale ale ale ale ale ale ale ale ale ale ale ale</span>
+    </div>
+  </div>
+
+</div>
+
 
 </main>
 
-
- <footer class="mytheme">
+<footer class="mytheme">
 
    <div class="mytheme myfooter">
 
      <div class="social">
        <a href="./index.html"> <i class="fa fa-home"></i></a>
-       <a href="https://facebook.com/geek/">  <i class="fa fa-facebook"></i></a>
+       <a href="https://facebook.com/geek/"> <i class="fa fa-facebook"></i></a>
        <a href="https://whatsapp.com/geek/"> <i class="fa fa-whatsapp"></i></a>
        <a href="https://telegram.com/geek/"> <i class="fa fa-telegram"></i></a>
        <a href="https://linkedin.com/geek/"> <i class="fa fa-linkedin"></i></a>
      </div>
-    <p style="text-align: right; background-color: #ff711a;">&copy; 2024 Grupo-20 &emsp; </p>
+
+    <p class="aright">&copy; 2024 Grupo-20 &emsp; </p>
   </div>
    
- </footer>
+</footer>
 
 </body>
-</html>
+</html>      

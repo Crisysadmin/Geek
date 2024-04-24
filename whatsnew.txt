@@ -1,0 +1,84 @@
+
+ WHATSNEW
+ ========
+ 
+ para tener idea concreta de los cambios realizados
+----------------------------------------------------------------------------------
+2024-04-24  ALE 
+- index.html
+  Rediseñado el menu para hacerlo responsivo e independiente de 3ra librerias
+  y el footer. Aplica a todos los html
+
+- index.html
+  Rehecho. Primera version... para hacerlo totalmente responsivo
+
+- gallery.html
+  listo para el que quiera empezar con el carrousel
+
+- company.html
+  agregado ejemplos de sucursales
+
+- contact.html
+  ahora esta disponible. No se que habia pasado.
+  Todavia contiene estilos CSS que colisionaban con otras liberrias como
+  Bootstrap
+
+- shop.html
+  en fase diseño... 
+
+- geek.css
+  Se sacó todo lo referente a librerias externas
+  Intento depurarlo y poner aqui todos los estilos desperdigados por los html. 
+  Trabajo inconcluso...
+
+----------------------------------------------------------------------------------
+
+
+
+----------------------------------------------------------------------------------
+
+
+
+----------------------------------------------------------------------------------
+
+
+
+----------------------------------------------------------------------------------
+
+
+
+----------------------------------------------------------------------------------
+
+
+
+----------------------------------------------------------------------------------
+
+
+
+----------------------------------------------------------------------------------
+
+
+
+----------------------------------------------------------------------------------
+
+
+
+----------------------------------------------------------------------------------
+
+
+
+----------------------------------------------------------------------------------
+
+
+
+----------------------------------------------------------------------------------
+
+
+
+----------------------------------------------------------------------------------
+
+
+
+
+
+
