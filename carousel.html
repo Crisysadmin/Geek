@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./img/shirt-icon.png" type="image/x-icon">
+  <link rel="stylesheet" 
+     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="./css/geek.css">
+
+  <title> Template </title>
+
+ <style>
+
+.contenedor {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly ;
+    grid-gap: 50px 10px;
+}
+
+.tarjeta {
+    width: 250px;
+    border: 1px solid gray;
+    border-radius: 6px;
+    text-align: center;
+    font-family: Verdana, "Segoe UI", Arial, sans-serif;
+    background-color: white;
+    overflow: hidden;
+  }
+
+.tarjeta img {
+    width: 100%;
+   }
+
+.cuerpo { margin: 10px; 
+     }
+
+ </style>
+
+</head>
+
+<body>
+
+<header>
+
+  <!-- Navbar -->
+  <div class="topnav">
+    <a href="./index.html" class="topnav orange"><i class="fa fa-home" 
+      style="font-size:18px;"></i> </a>
+
+    <a href="./gallery.html"  class="topnav">Galeria</a>
+    <a href="./company.html"  class="topnav">Empresa</a>
+    <a href="./contact.html"  class="topnav">Contacto</a>
+    <a href="./carousel.html" class="topnav">Carousel</a>
+    <a href="./shop.html" class="right orange shop"> 
+        <img class="" src="./img/cart2.svg" alt="shop cart"></a>
+  </div>
+
+</header>
+
+<br>
+<br>
+    <h1>Remeras premium </h1>
+
+
+<main>
+
+      <h5 id="my"> GEEK</h5>
+
+<div class="contenedor">
+
+           <!--div class="tarjeta">
+                
+                <img src="./img/at-walker-r.webp" alt="AT-walker"/>
+                <div class="cuerpo">
+                    <h4>AT-walker</h4>
+                    <h5>en stock</h5>
+                </div>    
+            </div>
+
+           <div class="tarjeta">
+                <img src="./img/binary-computer-c.webp" alt="Binary computer">
+                <div class="cuerpo">
+                    <h4>Binary computer</h4>
+                    <h5 class="red">sin stock</h5>
+                </div>    
+            </div>
+
+           <div class="tarjeta">
+                <img src="./img/electronic-components-c.webp" alt="Electronic components">
+                <div class="cuerpo">
+                    <h4>Electronic components</h4>
+                    <h5>en stock</h5>
+                </div>    
+            </div -->
+
+</div>
+
+
+
+<div id="demo" style="">
+ &nbsp;
+</div>
+
+</main>
+
+
+ <footer class="mytheme">
+
+   <div class="myfooter">
+
+     <div class="social">
+       <a href="./index.html"> <i class="fa fa-home"></i></a>
+       <a href="https://facebook.com/geek/"> <i class="fa fa-facebook"></i></a>
+       <a href="https://whatsapp.com/geek/"> <i class="fa fa-whatsapp"></i></a>
+       <a href="https://telegram.com/geek/"> <i class="fa fa-telegram"></i></a>
+       <a href="https://linkedin.com/geek/"> <i class="fa fa-linkedin"></i></a>
+     </div>
+
+    <p class="aright">&copy; 2024 Grupo-20 &emsp; </p>
+  </div>
+   
+ </footer>
+<script src="./js/geek.js"></script>
+<script>
+//---- arma las cards 
+ cad2 = drawCards();
+document.querySelector(".contenedor").innerHTML = cad2;
+</script>
+
+</body>
+</html>

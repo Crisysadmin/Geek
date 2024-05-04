@@ -32,13 +32,17 @@
   Trabajo inconcluso...
 
 ----------------------------------------------------------------------------------
-
-
+2024-05-01
+-  actualizacion archivo CSS
+-  algunas modific a contact.html
+-  prueba de carga de tarjetas a gallery
 
 ----------------------------------------------------------------------------------
-
-
-
+2024-05-03
+-  actualizacion de geek.js
+-  agregado terms.html (simil terminos y condiciones)
+-  agregado de carousel en menu como idea de partida, pero debe ir en gallery.html
+ 
 ----------------------------------------------------------------------------------
 
 

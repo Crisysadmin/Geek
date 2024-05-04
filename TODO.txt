@@ -13,7 +13,7 @@
   javascrip para que los campos sean obligatorios
 
 -------------------------------------------------------------------------------------------
-  Tener al menos una página totalmente responsive con minimo          15         NO  
+  Tener al menos una página totalmente responsive con minimo          15         CASI  
   3 puntos de corte para 3 tamaños de dispositivos (PC desktop
   Tablet, Celular 
 
@@ -22,7 +22,7 @@
   transicion (10)
 
 -------------------------------------------------------------------------------------------
-  Poseer una estructura HTML maquetada con Flexbox y/o Grid           10         NO
+  Poseer una estructura HTML maquetada con Flexbox y/o Grid           10         CASI
 
 -------------------------------------------------------------------------------------------
   Se considerara la presentacion general del proyecto                 10         .
@@ -30,7 +30,7 @@
   de no retorno, la optimizacion de imagenes para la web y
   el uso de favicon  
 -------------------------------------------------------------------------------------------
-  El trabajo practico debera subirse a un servidor online y           10         .
+  El trabajo practico debera subirse a un servidor online y           10         SI
   compartirse mediante un repositorio de GIT
 
      *** MANDATORIO ***
@@ -40,7 +40,7 @@ ser navegada por el docente. Ej Netlify o similar
 
      *** MANDATORIO ***
 -------------------------------------------------------------------------------------------
-  El sitio web debe estar estructuRado utilizando etiquetas            5         .
+  El sitio web debe estar estructurado utilizando etiquetas            5         CASI
   semanticas HTML correctamente.
   Debe pasar la validacion de 
   https://validator.w3.org  ==> SIN ERRORES !!!
@@ -84,29 +84,39 @@ ser navegada por el docente. Ej Netlify o similar
 
 
 ===========================================================================================
-    USER      T A R E A S                                         ESTADO                
+    USER      T A R E A S                                                        ESTADO                
 ===========================================================================================
-    Ale       Hacer index.html responsivo                         en proceso
-                                                                                           
+  Ale         Hacer index.html responsivo                                       en proceso
+              Reordenar css
+              agregar header y footer con JS
+                                                                                                                        
 -------------------------------------------------------------------------------------------
               Hay difs con lo que tengo local
               cuando lo resuelva actualizo 
 ===========================================================================================
-    Cris    
+  Cris        animacion, transformacion transicion                                   NO 
                                                                                             
 -------------------------------------------------------------------------------------------
                                                                                            
 ===========================================================================================
-    Agos
+  Mariano
                                                                                            
 -------------------------------------------------------------------------------------------
                                                                                            
 ===========================================================================================
-    Nahuel
+  Robertino
                                                                                            
 -------------------------------------------------------------------------------------------
                                                                                            
 =========================================================================================== 
+ TAREAS PENDIENTES
+
+ FALTA CARROUSEL, ANIMACIONES y SEA TOTALMENTE RESPOSIVO
+
+-------------------------------------------------------------------------------------------
+                                                                                           
+=========================================================================================== 
+
 
  
 
