@@ -9,24 +9,9 @@
 
   <link rel="stylesheet" href="./css/geek.css">
 
-  <title> GEEK-R3 </title>
+  <title> GEEK-R4 </title>
 
  <style>
-
- * { margin: 0;
-     padding: 0;
-     box-sizing: border-box;
-   }
-
-body {
-    font-family: Verdana, "Segoe UI", Arial, sans-serif;
-   /* background-color:#f0f0f0; */  }
-
-main { margin-left: 0px; 
-       line-height: 1.5;
-       font-size: 16px;
-     }
-
 
 /* --- inicio responsive --- */
 
@@ -80,7 +65,7 @@ main { margin-left: 0px;
 
   body { 
          background-color: #f0f0f0; 
-      /* background-color: #e6ffe6; */
+      /* background-color: #e6ffe6; */ 
      }
 }
 
@@ -102,6 +87,8 @@ main { margin-left: 0px;
   .col-12 {width: 100%;}
 }
 
+/*  -- testear y sacar
+
 div P .autora { 
     font-family: 'sans';
     color: white;
@@ -110,7 +97,7 @@ div P .autora {
     background-color: #ff711a;
     font-size: 9pt;
   }
-
+*/
 
 /*  100/12  */
 /*
@@ -138,125 +125,30 @@ div P .autora {
 
 /* ----  fin reponsive ---- */
 
-.fa {
+.fa.fa-tiktok {
+    height: 16px; 
+   /* vertical-align: -0.1em; */
+ }
+
+.fa.fa-tiktok::before {
     display: inline-block;
-    font-style: normal;
-    font-variant-caps: normal;
-    font-weight: normal;
-    font-stretch: normal;
-    line-height: 1;
-    font-family: FontAwesome;
-    font-size-adjust: none;
-    font-kerning: auto;
-    font-variant-alternates: normal;
-    font-variant-east-asian: normal;
-    font-variant-ligatures: normal;
-    font-variant-numeric: normal;
-    font-variant-position: normal;
-    font-language-override: normal;
-    font-feature-settings: normal;
-    font-variation-settings: normal;
-    text-rendering: auto;
-  }
-
- .topnav {  
-        background-color: black;   
-        font-size: 12.5pt;
-    /* height 42px ** NUNCA ** definir una altura, xq el menu no puede flotar */
-       }
-
- .topnav a {
-         display: inline-block;
-         color: #f2f2f2;
-         text-align: center;
-         padding: 8px 16px;
-         text-decoration: none;
-       }
-
- .topnav a:hover { color: black;
-             background-color: #ddd;
-        }
-
- .img-cart { color: white;
-          background-color: #ddd !important;
-      }
-
- .right {  float: right;
-         display: inline-block;
-         margin : 0 auto;
-/*         padding: 0 auto; */
-       }
-
- .orange { background-color: #ff711a; }
-
- .centro { text-align: center; }
-
- h1,h5 { 
-      font-family: Verdana, "Segoe UI",Arial,sans-serif;
-      font-weight: 400;
-      text-align: center;
-      color: black;
-   }
-
- #my {
-      font-size: 80px;
-   }
-
-
- .big { font-size: 50px; }
-
-.asideL {
-  padding: 5px;
-  color: #ffffff;
-  text-align: center;
-  font-size: 14px;
- }
-
-.asideR {
-  background-color: #ffffe6;
-  padding: 8px 10px;
-  color: #ffffff;
-  text-align: center;
-  font-size: 14px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  align-items: center;
- }
-
-.blackie { background-color: black;
-  padding: 8px 10px;
-  color: white;
-  text-align: center;
-  font-size: 10pt;
- }
-
-#version { color: yellow; 
-     }
+    width: 18px;
+    height: 16px;    
+    content: url('./img/tiktok.svg'); /* "\f043"; */
+}
 </style>
 </head>
-
 
 <body>
 
 <header>
 
-<!-- Navbar -->
-<div class="topnav">
-  <a href="./index.html" class="topnav orange"><i class="fa fa-home" 
-     style="font-size:18px;"></i> </a>
-
-  <a href="./gallery.html"  class="topnav">Galería</a>
-  <a href="./company.html"  class="topnav">Empresa</a>
-  <a href="./contact.html"  class="topnav">Contacto</a>
-  <a href="./carousel.html" class="topnav">Carousel</a>
-  <a href="./shop.html" class="right orange shop"> 
-        <img class="" src="./img/cart2.svg" alt="shop cart"></a>
-</div>
 
 </header>
 
 <main>
 
-<div class="row" style="height:497px;">
+<div class="row" style="height: 78vh;">
 
   <div class="col-1">
     <div class="asideL">
@@ -283,10 +175,10 @@ div P .autora {
   <div class="col-2">
     <div class="asideR">
      <span> g20 g20 g20 g20 g20 g20 g20 g20 g20 g20 g20 g20 g20 g20 g20 g20 g20 g20 g20 g20 g20 g20  
-            g20 g20 g20 g20 g20 </span>
+            g20 g20 g20 g20 g20 g20 g20 g20</span>
      <h1 class="big">Space  for  Sale</h1>
      <span> g20 g20 g20 g20 g20 g20 g20 g20 g20 g20 g20 g20 g20 g20 g20 g20 g20 g20 g20 g20 g20 g20  
-            g20 g20 g20 g20 g20 g20 g20 g20 </span>
+            g20 g20 g20 g20 g20 g20 g20 g20 g20 g20 </span>
     </div>
   </div>
 
@@ -296,14 +188,15 @@ div P .autora {
 </main>
 
 <footer class="">
-   <div class="blackie myfooter">
+   <div class="blackie">
     Geek.com | &copy; Geek Inc. &emsp;1810-2024 Worldwide Reseved Rights <br>
     Fábrica Dirección: Loma de los Quinotos sin número, Virrey del Vino, República Argentina<br>
-    Teléfono: (+54-9) 9999-9999 | e-mail: geek-inc@yimail.com - Actualizada: 
+    Teléfono: (+54-9) 9999-9999 | e-mail: geek-inc@yimail.com - Actualizado: 
      <span id="version">-</span>
    </div>
 
    <div class="mytheme myfooter">
+      <!-- automatic js filled -->
 
      <div class="social">
        <a href="./index.html"> <i class="fa fa-home"></i></a>
@@ -311,6 +204,8 @@ div P .autora {
        <a href="https://whatsapp.com/geek/"> <i class="fa fa-whatsapp"></i></a>
        <a href="https://telegram.com/geek/"> <i class="fa fa-telegram"></i></a>
        <a href="https://linkedin.com/geek/"> <i class="fa fa-linkedin"></i></a>
+       <a href="https://tiktok.com/geek/">   <i class="fa fa-tiktok"></i></a>
+
      </div>
      <p class="aright">&copy; 2024 Grupo-20 &emsp; </p>
   </div>
@@ -318,8 +213,9 @@ div P .autora {
 </footer>
 
 </body>
+
 <script src="./js/geek.js"> </script>
 <script>
-document.getElementById("version").innerHTML = formatFecha( new Date());
+ document.getElementById("version").innerHTML = formatFecha( new Date());
 </script>
 </html>      

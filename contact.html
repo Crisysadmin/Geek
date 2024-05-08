@@ -6,154 +6,140 @@
   <link rel="icon" href="./img/shirt-icon.png" type="image/x-icon">
   <link rel="stylesheet" 
      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
   <link rel="stylesheet" href="./css/geek.css">
 
 <title> Contacto </title>
 
-
-<style>
-
-form { font-family:Georgia, "Times New Roman", Times, serif; }
-
-legend { font-family:Arial, Helvetica, sans-serif; 
-         background-color:#9b9b9e;
-         color: white
-     }
-
-input, select {
-	display: block;
-	margin-bottom: 1em;
-      }
-
-fieldset {
-	margin-bottom: 1em;
-	padding: 1em 1em 1em 2em; /* left 2em */
-        background-color:#ffffe6;
-      }
-
-fieldset fieldset {
-	margin-top: 1em;
-	margin-bottom: 1em;
-      }
-
-input[type="checkbox"] {
-	display: inline;
-      }
-
-input[type="submit"] {
-	display: block;
-         margin: 0 auto;
-        padding: 8px 10px; 
-      }
-
-.range { margin-bottom:1em; }	
-
-.card-type input, .card-type label {
-	display: inline-block; }
-
-</style>
+<style> </style>
 </head>
 
 <body>
 
  <header>
 
- <!-- Navbar -->
-<div class="topnav">
-  <a href="./index.html" class="topnav orange"><i class="fa fa-home" 
-     style="font-size:18px;"></i> </a>
-
-  <a href="./gallery.html"  class="topnav">Galeria</a>
-  <a href="./company.html"  class="topnav">Empresa</a>
-  <a href="./contact.html"  class="topnav">Contacto</a>
-  <a href="./carousel.html" class="topnav">Carousel</a>
-  <a href="./shop.html" class="right orange shop"> 
-        <img class="" src="./img/cart2.svg" alt="shop cart"></a>
-</div>
-
 </header>
 
 <main>
     <h1>Contacto </h1>
 
-
-<div style="width: 60%; margin: 0 auto;">
+<div class="form-main">
 
  <form id="registr" class="contc">
 
   <fieldset> 
     <legend class="G20">&nbsp;Datos Personales&nbsp;</legend> 
-    <div> 
-        <label>Apellido: <b class="red p9"> *</b>
-        <input id="family-name" name="given-name" type="text" placeholder="Apellido solamente" 
-size="40" required autofocus> 
-		</label>
-    </div>
-    <div> 
-        <label>Nombres: <b class="red p9"> *</b>
-        <input id="given-name" name="family-name" type="text" placeholder="Nombres" size="40" required> 
-		</label>
-    </div>
-    <div> 
-    	<label>Fecha Nacimiento: 
-        <input id="dob" name="dob" type="date" required>
-		</label>
-    </div> 
-    <div> 
-        <label>e-mail: <b class="red p9"> *</b>
-        <input id="email" name="email" type="email" placeholder="example@domain.com" size="40" required>
-		</label> 
-    </div> 
-    <div> 
-        <label>URL: 
-        <input id="url" name="url" type="url" placeholder="http://mysite.com" size="40" >
-		</label> 
-    </div>    
-    <div> 
-        <label>Telefono: <b class="red p9"> *</b>
+
+ <div class="container">
+   <div class="panel-left"> <!-- left panel -->
+
+     <div> 
+        <label>Apellido: <b class="red p9"> *</b> </label>
+        <input id="family-name" name="given-name" type="text" size="40"  
+          placeholder="Apellido solamente" required  autofocus> 		
+     </div>
+
+     <div> 
+        <label>Nombres: <b class="red p9"> *</b> </label>
+        <input id="given-name" name="family-name" type="text"  size="40"   
+          placeholder="Nombres"  required>		
+     </div>
+     <div> 
+    	<label>Fecha Nacimiento: </label>
+        <input id="dob" name="dob" type="date" required>		
+     </div> 
+
+     <div> 
+        <label>e-mail: <b class="red p9"> *</b> </label> 
+        <input id="email" name="email" type="email" size="40" 
+           placeholder="ejemplo@dominio.com"  required>		
+     </div>
+ 
+     <div> 
+        <label>URL: </label> 
+        <input id="url" name="url" type="url" placeholder="http://misitio.com" size="40">
+     </div>  
+  
+     <div> 
+        <label>Telefono: <b class="red p9"> *</b></label>
         <input id="phone" name="phone" type="tel" placeholder="Ej. +54-9-11-9999-9999" required>
-		</label> 
-    </div> 
+     </div> 
 
-    <div style="font-size: 9pt; ">
-      <span> &emsp;<input type="checkbox" id="scales" name="scales" class="checkbox" required>
-       <label for="scales">&nbsp;
-           <a href="./terms.html">He leído y acepto los términos y condiciones</a>
-         </label> 
-      </span>
-      <span class="fright red" > * campos obligatorios &emsp; &emsp; </span>    
-    </div>
+     <div class="p9">
+       <span> &emsp;<input type="checkbox" id="scales" name="scales" class="checkbox" required>
+        <label class="p9">&nbsp;
+           <a href="./terms.html">He leído y acepto los términos y condiciones</a></label></span>
+       <span class="red p9"> &emsp; &emsp; * campos obligatorios </span>    
+     </div>
 
-  <div>
-   <input type="submit" class="G20" style="margin: 0 auto;" value="Enviar Formulario">
+  </div>
 
+
+   <div class="panel-right">  <!-- right panel --> 
+
+     <div class="container">
+      <img id="foto" src="" class="photo-bg" width="125" height="167" >
+     </div>
+
+     <div class="gender">
+        <br> 
+        <p style="padding-bottom: 8px;"><label> Género: </label></p>              
+           <input type="radio" id="Femenino"  name="genero" value="f">
+           <label for="Femenino" >&nbsp;Femenino </label> <br>             
+           <input type="radio" id="Masculino" name="genero" value="m">   
+           <label for="Masculino">&nbsp;Masculino </label> <br>
+           <input type="radio" id="Otro"      name="genero" value="o">       
+           <label for="Otro"     >&nbsp;Otro      </label> <br> <br>
+     </div>
+
+   </div>
+
+ </div>
+
+<!-- end container /entry fields -->
+   
+  <input type="submit" class="centro" value="Enviar Formulario">
   </div>
 
   </fieldset>
  </form>
 
 </div>
-<br>
+
 </main>
 
 
  <footer class="mytheme">
-
    <div class="myfooter">
-
-     <div class="social">
-       <a href="./index.html"> <i class="fa fa-home"></i></a>
-       <a href="https://facebook.com/geek/">  <i class="fa fa-facebook"></i></a>
-       <a href="https://whatsapp.com/geek/"> <i class="fa fa-whatsapp"></i></a>
-       <a href="https://telegram.com/geek/"> <i class="fa fa-telegram"></i></a>
-       <a href="https://linkedin.com/geek/"> <i class="fa fa-linkedin"></i></a>
-     </div>
-
-    <p class="aright">&copy; 2024 Grupo-20 &emsp; </p>
-  </div>
-   
+   </div>  
  </footer>
+
+<script src="./js/geek.js"> </script>
+<script>
+var oImg = document.getElementById("foto");
+
+document.addEventListener('input',(e)=>{
+var cFile = "";
+
+   if(e.target.getAttribute('name')=="genero") {
+      var rad = e.target.value;
+       switch (rad) {
+          case 'f':
+               cFile = "./img/avatar-mujer.png"
+               break;  
+          case 'm':
+               cFile = "./img/avatar-hombre.png"
+               break;  
+          case 'o':
+               cFile = "./img/avatar-otro.png"
+               break;  
+          default:
+       }  
+   }
+    // console.log(e.target.value);
+    oImg.src = cFile;    
+})
+ 
+</script>
 
 </body>
 </html>
