@@ -3,6 +3,7 @@
  ========
  
  para tener idea concreta de los cambios realizados
+
 ----------------------------------------------------------------------------------
 2024-04-24  ALE 
 - index.html
@@ -15,25 +16,25 @@
 - gallery.html
   listo para el que quiera empezar con el carrousel
 
-- company.html
+* company.html
   agregado ejemplos de sucursales
 
-- contact.html
+* contact.html
   ahora esta disponible. No se que habia pasado.
-  Todavia contiene estilos CSS que colisionaban con otras liberrias como
+  Todavia contiene estilos CSS que colisionaban con otras librerias como
   Bootstrap
 
-- shop.html
+* shop.html
   en fase diseño... 
 
-- geek.css
+* geek.css
   Se sacó todo lo referente a librerias externas
   Intento depurarlo y poner aqui todos los estilos desperdigados por los html. 
   Trabajo inconcluso...
 
 ----------------------------------------------------------------------------------
 2024-05-01
--  actualizacion archivo CSS
+*  actualizacion archivo CSS
 -  algunas modific a contact.html
 -  prueba de carga de tarjetas a gallery
 
@@ -41,11 +42,22 @@
 2024-05-03
 -  actualizacion de geek.js
 -  agregado terms.html (simil terminos y condiciones)
--  agregado de carousel en menu como idea de partida, pero debe ir en gallery.html
+-  agregado de carousel en menu como idea de partida, pero deberia ir en gallery.html
  
 ----------------------------------------------------------------------------------
+2024-05-07
+* contac.html
+- se agregó un "meme de foto". Se pone eligiendo el género
+  se movió todo el css a geek.css
 
+* index.html 
+- se depuró un poco el css - resta la parte responsiva -
+- se agregó una animacion al "home"
+- se achicó la barra del footer
+- se colocaron mas iconos de redes sociales
 
+* el menu de navegación y el footer de redes sociales se colocaron con JS
+  en todos los html
 
 ----------------------------------------------------------------------------------
 

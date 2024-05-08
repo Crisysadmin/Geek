@@ -87,8 +87,8 @@ ser navegada por el docente. Ej Netlify o similar
     USER      T A R E A S                                                        ESTADO                
 ===========================================================================================
   Ale         Hacer index.html responsivo                                       en proceso
-              Reordenar css
-              agregar header y footer con JS
+              Reordenar css                                                      hecho
+              agregar header y footer con JS                                     hecho
                                                                                                                         
 -------------------------------------------------------------------------------------------
               Hay difs con lo que tengo local
@@ -97,7 +97,7 @@ ser navegada por el docente. Ej Netlify o similar
   Cris        animacion, transformacion transicion                                   NO 
                                                                                             
 -------------------------------------------------------------------------------------------
-                                                                                           
+                                                                                            
 ===========================================================================================
   Mariano
                                                                                            
@@ -111,7 +111,10 @@ ser navegada por el docente. Ej Netlify o similar
 =========================================================================================== 
  TAREAS PENDIENTES
 
- FALTA CARROUSEL, ANIMACIONES y SEA TOTALMENTE RESPOSIVO
+- FALTA CARROUSEL 
+- FALTA ANIMACIONES 
+- SEA TOTALMENTE RESPONSIVO
+- VENTANA MODAL PARA LA TARJETA (REMERA/CAMISA) ELEGIDA
 
 -------------------------------------------------------------------------------------------
                                                                                            
