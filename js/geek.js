@@ -1,4 +1,5 @@
 
+// Array de objetos con las remeras/camisas para el carrousel 
 let data = [
     {
         id: 1,
@@ -216,6 +217,29 @@ let data = [
     }
 ];
 
+// header construction
+var sNav = ``;
+sNav = sNav + `
+<div class="topnav">
+  <a href="./index.html" class="topnav orange"><i class="fa fa-home fa-home-hover px18"></i> </a>
+
+  <a href="./gallery.html"  class="topnav">Galería</a>
+  <a href="./company.html"  class="topnav">Empresa</a>
+  <a href="./contact.html"  class="topnav">Contacto</a>
+  <a href="./carousel.html" class="topnav">Carousel</a>
+  <a href="./shop.html" class="right orange shop"> 
+        <img class="" src="./img/cart2.svg" alt="shop cart"></a>
+</div> `
+document.querySelector("header").innerHTML = sNav;
+
+
+// footer construction
+var sFooter = ``;
+sFooter = sFooter + ``;
+// document.querySelector("footer").innerHTML = sFooter;
+
+
+
 
 /*
  let formatDate = (date) => {
@@ -284,16 +308,64 @@ function drawCards()
  return cad;
 }
 
+// debido a inexplicable "error" puse la linea inferior en carousel.html
 //document.querySelector(".contenedor").innerHTML = cad;
 
 
 
+// Coloca Redes sociales y barra final
+navf = `
+     <div class="social">
+      <span style="width: 75vw">
+       <a href="./index.html"> <i class="fa fa-home fa-home-hover"></i></a>
+       <a href="https://facebook.com/geek/" > <i class="fa fa-facebook"></i></a>
+       <a href="https://instagram.com/geek/"> <i class="fa fa-instagram"></i></a> 
+       <a href="https://whatsapp.com/geek/" > <i class="fa fa-whatsapp"></i></a>
+       <a href="https://telegram.com/geek/" > <i class="fa fa-telegram"></i></a>
+       <a href="https://linkedin.com/geek/" > <i class="fa fa-linkedin"></i></a>
+       <a href="https://github.io/geek/">     <i class="fa fa-github"  ></i></a>
+       <a href="https://pinterest.com/geek/"> <i class="fa fa-pinterest"></i></a>
+       <a href="https://twitter.com/geek/"  > <i class="fa fa-twitterx" ></i></a>
+       <a href="https://tiktok.com/geek/">    <i class="fa fa-tiktok"></i></a>
+      </span>
+      <span class="g20-ribbon" style="width: 25vw">&copy; 2024 Grupo-20</span>
+     </div> `
+
+document.querySelector(".myfooter").innerHTML = navf;
+
+
+
+/*
+suportedLStorage();
+
+function suportedLStorage() 
+{
+  let bSupported = false;
+  if(typeof(Storage) !== "undefined") {
+     bSupported = false;
+  }
+ alert("Local Storage suport: "+ bSuported );  
+ return bSupported; 
+}
+
 // document.getElementById("fotos") = cad;
 // document.querySelector("#fotos").innerHTML = cad;
 
-/*
-const myJSON = JSON.stringify(data);
-document.getElementById("demo").innerHTML = myJSON;
+
+//const myJSON = JSON.stringify(data);
+// document.getElementById("demo").innerHTML = myJSON;
+
 */
+
+
+
+//-----
+
+
+
+
+
+
+
 
 
