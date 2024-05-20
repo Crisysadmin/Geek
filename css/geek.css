@@ -180,6 +180,7 @@ h1 { font-size: 26pt; }
 
 
 .div-center { margin: 0 auto; }
+
 .centro, .acenter { text-align: center; }
 
 .left, .aleft { text-align: left; }
@@ -246,11 +247,9 @@ fieldset fieldset {
 	margin-bottom: 0.2em;
       }
 
-
-input[type="radio"] {
-	display: inline;
-     }
-
+input[type="text"] {
+     text-transform: uppercase;
+   }
 input[type="checkbox"] {
 	display: inline;
       }
@@ -260,6 +259,10 @@ input[type="submit"] {
          margin: 0 auto;
         padding: 8px 10px; 
       }
+
+::placeholder { /* Recent browsers */
+    text-transform: none;
+  }
 
 .range { margin-bottom:1em; }	
 
@@ -330,8 +333,8 @@ label[for] {font-size: 10pt; }
     padding: 2px; /* left 2em */
   }
 
-.photo-bg { background-color: #9b9b9e; 
-            border: inset;
+.photo-bg { background-color: lightgray; /* #9b9b9e; */
+            border: 1px solid red;
           }
 
 /*--- End FORM ------------------------------*/
@@ -393,6 +396,40 @@ label[for] {font-size: 10pt; }
     color: black; 
     font-size: 9pt;
     padding: 2px 4px;
+    text-decoration: none;
  }
 
+ a.sucur {text-decoration:none;}
 
+/* table en show_data */
+
+ table, th, tr, td {
+     border: 1px solid black; 
+     border-collapse: collapse; 
+     font-family: sans-serif;
+     padding: 5px 10px;
+  }
+
+ th, th, tr, td { 
+     text-align: center; 
+  }
+
+ caption{
+     font-size: 18pt;
+     background-color: navy; 
+     color: white;
+ }
+
+ th { 
+     background-color: lightgray;
+     color: red;
+     font-weight: normal;
+  }
+
+ tr:nth-child(even) {
+     background-color: #e0efd4;
+     color: black;
+  }
+
+ button >a {  text-decoration: none;}
+/* end show_data*/
