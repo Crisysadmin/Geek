@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./img/shirt-icon.png" type="image/x-icon">
+  <link rel="stylesheet" href="./css/geek.css">
+
+<title> Envio al Servidor</title>
+
+<!-- style>
+ 
+ table, th, tr, td {
+     border: 1px solid black; 
+     border-collapse: collapse; 
+     font-family: sans-serif;
+     padding: 5px 10px;
+  }
+
+ th, th, tr, td { 
+     text-align: center; 
+  }
+
+ caption{
+     font-size: 18pt;
+     background-color: navy; 
+     color: white;
+ }
+
+ th { 
+     background-color: lightgray;
+     color: red;
+     font-weight: normal;
+  }
+
+ tr:nth-child(even) {
+     background-color: #e0efd4;
+     color: black;
+  }
+
+ button >a {  text-decoration: none;}
+
+</style -->
+
+ <script src="./js/geek.js"></script>
+</head>
+ 
+<body>
+
+<main>
+<br> <br>
+ 
+<h4 class="centro">Nuestro servidor ha recibido la siguiente información 
+el <span id="grab"></span></h4>
+ 
+ <br><br>
+
+ <table class="div-center" width="330">
+
+  <tr><caption>Formulario</caption></tr>
+  <tr>
+    <th>Campo</th>
+    <th>Valor</th>
+  </tr>
+
+  <script>
+   var args = location.search.substr(1).split('&');
+
+   for (var i = 0; i < args.length; ++i) {
+
+      var parts = args[i].split('=');
+
+      if (parts != null) {
+         var field = parts[0];
+         var value = parts[1];
+
+         if (value == null) {
+             value = "null"
+      }
+      else {
+         value = '' + unescape(value.replace(/\+/g, ' ')) + '';
+      }
+
+       document.writeln('<tr><td align="center">' + field + '</td>');
+       document.writeln('<td align="center">' + value + '</td></tr>');
+     }
+
+   } // endfor
+
+ document.getElementById("grab").innerHTML = formatFecha( new Date());
+
+  </script>
+
+ <noscript>No tiene habilitado Javascript!</noscript>
+
+</table>
+
+<br> 
+
+ <p align=center>&nbsp;
+   <button class="volver"><a href="./contact.html"> Volver </a> </button> 
+ </p> 
+
+</main>
+
+</body>
+</html>

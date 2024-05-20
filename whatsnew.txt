@@ -60,8 +60,11 @@
   en todos los html
 
 ----------------------------------------------------------------------------------
+2024-05-20
+- Se tuneó un poco contact.html
+- Se corrigieron errores en terms.html
 
-
+* Se validaron todos los HTML del sitio !
 
 ----------------------------------------------------------------------------------
 

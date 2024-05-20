@@ -16,7 +16,31 @@
 <body>
 
  <header>
+<script>
 
+
+function validateAle() 
+{ 
+  let upplname = document.getElementById('family-name').value; 
+  let uppfname = document.getElementById('given-name').value;  
+  let lowfmail = document.getElementById("userEmail").value;  
+  document.getElementById('family-name').value = upplname.toUpperCase(); 
+  document.getElementById('given-name').value  = uppfname.toUpperCase();
+  document.getElementById("userEmail").value  = lowfmail.toLowerCase();
+  return true;
+}
+
+
+function isHttpValid(str) {
+ try {
+   const newUrl = new URL(str);
+   return newUrl.protocol === 'http:' || newUrl.protocol === 'https:';
+ } 
+   catch (err) {
+   return false;
+ }
+}
+</script>
 </header>
 
 <main>
@@ -24,80 +48,133 @@
 
 <div class="form-main">
 
- <form id="registr" class="contc">
+  <form id="registr" class="contc" action="show_data.html" target="_blank"
+      onsubmit="return validateAle()">
 
   <fieldset> 
     <legend class="G20">&nbsp;Datos Personales&nbsp;</legend> 
 
- <div class="container">
-   <div class="panel-left"> <!-- left panel -->
+  <div class="container">
+
+    <div class="panel-left"> <!-- left panel -->
 
      <div> 
         <label>Apellido: <b class="red p9"> *</b> </label>
-        <input id="family-name" name="given-name" type="text" size="40"  
-          placeholder="Apellido solamente" required  autofocus> 		
+        <input 
+         type="text"
+         id="family-name" 
+         name="Apellido" 
+         size="40"  
+         minlength="3"
+         maxlength="40"  
+         placeholder="Apellido solamente"
+         pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" 
+         title="Solo letras"
+         required  
+         autofocus> 		
      </div>
 
      <div> 
         <label>Nombres: <b class="red p9"> *</b> </label>
-        <input id="given-name" name="family-name" type="text"  size="40"   
-          placeholder="Nombres"  required>		
+        <input 
+           type="text"  
+	   style="text-transform: uppercase;"
+ 	   id="given-name" 
+           name="Nombres" 
+           size="40"   
+           minlength="3"
+           maxlength="40"  
+           placeholder="Nombres"  
+           pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" 
+           title="Solo letras"
+           required>		
      </div>
+
      <div> 
     	<label>Fecha Nacimiento: </label>
-        <input id="dob" name="dob" type="date" required>		
+        <input 
+         type="date" 
+         id="dob" 
+         name="Fech.Nac">		
      </div> 
 
      <div> 
         <label>e-mail: <b class="red p9"> *</b> </label> 
-        <input id="email" name="email" type="email" size="40" 
-           placeholder="ejemplo@dominio.com"  required>		
+        <input 
+          type="email" 
+	        style="text-transform: lowercase;"
+          id="userEmail" 
+          name="email" 
+          size="40" 
+          placeholder="user_mail@dominio.com" 
+          pattern="^([a-zA-Z0-9._%]+@[a-zA-Z0-9.]+\.[a-zA-Z]{2,})$"
+          title ="Ingresa un email válido"     
+          required>		
      </div>
  
-     <div> 
+     <div>  
         <label>URL: </label> 
-        <input id="url" name="url" type="url" placeholder="http://misitio.com" size="40">
+        <input 
+          type="text" 
+          id="myurl" 
+          name="URL" 
+          size="40"
+          placeholder="http://misitio.com">
      </div>  
   
      <div> 
         <label>Telefono: <b class="red p9"> *</b></label>
-        <input id="phone" name="phone" type="tel" placeholder="Ej. +54-9-11-9999-9999" required>
+        <input 
+          type="tel" 
+          id="phone" 
+          name="Celular" 
+          placeholder="Ej. +54-9-11-9999-9999" 
+          required>
      </div> 
 
      <div class="p9">
-       <span> &emsp;<input type="checkbox" id="scales" name="scales" class="checkbox" required>
+       <span> &emsp;
+       <input class="checkbox" 
+          type="checkbox" 
+          id="scales" 
+          name="terms" 
+          cheked
+          required>
         <label class="p9">&nbsp;
            <a href="./terms.html">He leído y acepto los términos y condiciones</a></label></span>
        <span class="red p9"> &emsp; &emsp; * campos obligatorios </span>    
      </div>
 
-  </div>
+    </div>  <!-- end left panel --> 
 
 
-   <div class="panel-right">  <!-- right panel --> 
+    <div class="panel-right">  <!-- right panel --> 
 
      <div class="container">
-      <img id="foto" src="./img/interrogation.svg" class="photo-bg" width="125" height="167" >
+        <img id="foto" src="./img/interrogation.svg" class="photo-bg" width="125" height="167" 
+          alt="user image">
      </div>
 
      <div class="gender">
         <br> 
         <p style="padding-bottom: 8px;"><label> Género: </label></p>              
-           <input type="radio" id="Femenino"  name="genero" value="f">
+           <input type="radio"  id="Femenino"  name="genero" value="f">
            <label for="Femenino" >&nbsp;Femenino </label> <br>             
-           <input type="radio" id="Masculino" name="genero" value="m">   
+           <input type="radio"  id="Masculino" name="genero" value="m">   
            <label for="Masculino">&nbsp;Masculino </label> <br>
-           <input type="radio" id="Otro"      name="genero" value="o">       
+           <input type="radio"  id="Otro"      name="genero" value="o">       
            <label for="Otro"     >&nbsp;Otro      </label> <br> <br>
      </div>
+    
+    </div>  <!-- end right panel --> 
 
-   </div>
-
- </div>
-
-<!-- end container /entry fields -->
+  </div>
+  <!-- end container /entry fields -->
    
-  <input type="submit" class="centro" value="Enviar Formulario">
+  <input type="submit" class="centro" id="send" value="Enviar Formulario">
+   
+  <div class="alert alert-success mt-2 d-none"
+      id="alertSuccess">
   </div>
 
   </fieldset>
@@ -136,9 +213,10 @@ var cFile = "";
        }  
    }
     // console.log(e.target.value);
-    oImg.src = cFile;    
-})
- 
+    oImg.src = cFile;
+    oImg.alt = "";    
+});
+
 </script>
 
 </body>
