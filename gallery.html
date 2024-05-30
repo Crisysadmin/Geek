@@ -8,10 +8,37 @@
      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="./css/geek.css">
 
-  <title> Galleria </title>
+  <title> Gallery </title>
 
-  <style>
-  </style>
+ <style>
+
+.contenedor {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly ;
+    grid-gap: 50px 10px;
+}
+
+.tarjeta {
+    width: 250px;
+    border: 1px solid gray;
+    border-radius: 6px;
+    text-align: center;
+    font-family: Verdana, "Segoe UI", Arial, sans-serif;
+    background-color: white;
+    overflow: hidden;
+  }
+
+.tarjeta img {
+    width: 100%;
+   }
+
+.cuerpo { margin: 10px; 
+     }
+
+ </style>
+
 </head>
 
 <body>
@@ -19,47 +46,40 @@
 <header>
 </header>
 
-
-<main>
-
 <br>
-    <h1>Remeras premium </h1>
-
+<br>
+    <h1>Remeras premium </h1> 
+<main>
 
       <h5 id="my"> GEEK</h5>
 
+<div class="contenedor">
 
-<p>
 
-</p> 
-   <div id="container">
-     <div class="t-shirt" >
+</div>
 
-      <a href="#" ><img class="G20" src="./img/at-walker-r.webp" 
-            width="300" height="300"  alt="tshirt-1"> </a>
 
-      <a href="#" ><img class="G20" 
-          src="./img/binary-computer-c.webp"
-            width="300" height="300"  alt="tshirt-2"> </a>
 
-      <a href="#" ><img class="G20"
-          src="./img/electronic-components-c.webp"
-            width="300" height="300"  alt="tshirt-3"> </a>
-     </div>
-   </div>
+<div id="demo" style="">
+ &nbsp;
+</div>
 
-   <p class="danger p20">PONER CARROUSEL</p> 
-   
 </main>
 
 
  <footer class="mytheme">
    <div class="myfooter">
+      <!-- automatic js filled -->
 
-  </div>  
+  </div>   
  </footer>
 
-<script src="./js/geek.js"> </script>
+<script src="./js/geek.js"></script>
+<script>
+ //---- arma las cards 
+ cad2 = drawCards();
+ document.querySelector(".contenedor").innerHTML = cad2;
+</script>
 
 </body>
 </html>

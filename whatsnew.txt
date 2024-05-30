@@ -63,12 +63,16 @@
 2024-05-20
 - Se tuneó un poco contact.html
 - Se corrigieron errores en terms.html
+- se mejoró la salida a show_data
 
 * Se validaron todos los HTML del sitio !
 
 ----------------------------------------------------------------------------------
-
-
+2024-05-22
+- se agregó a carousel.html la API REST con VUE
+- se agregó un banner abajo
+- se agregó archivo banner.css 
+- correcciones varias
 
 ----------------------------------------------------------------------------------
 
