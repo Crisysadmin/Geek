@@ -200,7 +200,7 @@ let data = [
         talles: ['S', 'M', 'L', 'XL'],
         stock: 12,
         colores: ["Azul"],
-        imagen: "./img/no-signal-r.webp ",
+        imagen: "./img/no-signal-r.webp",
         creado: ""
     },
     {
